@@ -23,7 +23,7 @@
         </a>
         <nav>
             <ul class="nav-list">
-                <li><a href="./index.html" class="link nav-page">Agencja</a></li>
+                <li><a href="./index.html" class="link nav-page-current">Agencja</a></li>
                 <li><a href="./portfolio.html" class="link nav-page">Portfolio</a></li>
                 <li><a href="./index.html#contact-address" class="link nav-page">Kontakt</a></li>
             </ul>
@@ -51,7 +51,16 @@
     <!-- HEADER -->
     <header class="head">
         <h1 class="heading1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="head-button">Zamów usługe</button>
+        <button type="button" class="head-button" data-modal-open>Zamów usługe</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal-body">
+                <button class="close-modal-button" data-modal-close>
+                    <svg class="icon-close-modal">
+                        <use href="./images/icons.svg#icon-close" />
+                    </svg>
+                </button>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -378,6 +387,7 @@
         </div>
     </footer>
 
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

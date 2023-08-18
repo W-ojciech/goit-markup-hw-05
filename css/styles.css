@@ -173,7 +173,7 @@ ul {
 }
 
 .backdrop {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -457,23 +457,24 @@ ul {
     transition: transform var(--standard-animation);
 }
 
-.product-card>img {
-    margin-bottom: 20px;
+.product-card>div {
+    max-height: 294px;
 }
 
 .product-title {
     font-weight: bold;
-    font-size: 1.125em;
+    font-size: 18px;
     line-height: 2;
-    margin-bottom: 4px;
-    padding-left: 20px;
+    letter-spacing: 1.08px;
+    padding: 20px 20px 0 20px;
 }
 
 .product-type {
     color: #757575;
+    font-size: 16px;
+    letter-spacing: 0.48px;
     line-height: 1.875;
-    margin-bottom: 20px;
-    padding-left: 20px;
+    padding: 0 20px 20px 20px;
 }
 
 
